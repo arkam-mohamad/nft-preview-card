@@ -1,0 +1,95 @@
+*{
+  margin: 0;
+  font-family: 'Outfit', sans-serif;}
+body{
+  background-color: hsl(217, 54%, 11%);
+}
+main{
+  width: 300px;
+  height: 550px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: hsl(216, 50%, 16%);
+  box-shadow: 15px 15px hsl(216, 54%, 10%), 40px 40px hsl(217, 54%, 10.6%), -15px 15px hsl(216, 54%, 10%), -40px 40px hsl(217, 54%, 10.6%);
+}
+.image{
+  width: 98%;
+  position: relative;
+}
+.image .img{
+  border-radius: 10px;
+  width: 100%;
+}
+.overlay{
+  position: absolute;
+  top: 0;
+  background-color: hsla(178, 100%, 50%, 0);
+  width:100%;
+  height: 100%;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.overlay img{
+  opacity: 0;
+}
+h1{
+  color: hsl(0, 0%, 100%);
+  font-size: 22px;
+}
+p{
+  font-size: 18px;
+  color: hsl(215, 51%, 70%);
+}
+.price{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.price p{
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.price p:first-of-type{
+  color: hsl(178, 100%, 50%);
+  font-weight: 400;
+}
+hr{
+  border: 1px solid hsl(215, 32%, 27%);
+}
+.profile{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+}
+.profile img{
+  width:30px;
+  border: 1px solid hsl(0, 0%, 100%);
+  border-radius: 50%;
+}
+.profile p{
+  font-size: 16px;
+}
+span{
+  color: hsl(0, 0%, 100%);
+}
+.image:hover .overlay{
+  background-color: hsla(178, 100%, 50%, 0.5);
+}
+.image:hover .view{
+  opacity: 1;
+  color: white;
+}
+.image:hover,h1:hover, span:hover{
+  cursor: pointer;
+  color: hsl(178, 100%, 50%);
+}
+
+
